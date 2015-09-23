@@ -1036,6 +1036,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A584F05E1BB1AD9B00DC6526 /* libopencv_highgui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libopencv_highgui.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1D000116D9F7B700E9AA4B /* cap_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cap_ios.h; sourceTree = "<group>"; };
 		AB1D000216D9F7B700E9AA4B /* highgui.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = highgui.hpp; sourceTree = "<group>"; };
 		AB1D000316D9F7B700E9AA4B /* highgui_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = highgui_c.h; sourceTree = "<group>"; };
@@ -1098,7 +1099,6 @@
 		AB1D023C16D9FD7300E9AA4B /* precomp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = precomp.hpp; sourceTree = "<group>"; };
 		AB1D023D16D9FD7300E9AA4B /* sift.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sift.cpp; sourceTree = "<group>"; };
 		AB1D023E16D9FD7300E9AA4B /* surf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = surf.cpp; sourceTree = "<group>"; };
-		AB1D025F16D9FE6B00E9AA4B /* libopencv_highgui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libopencv_highgui.a; path = "/Users/jonathan/svnCheckouts/OpenCV-iOS/OpenCV-iOS/build/Release-iphoneos/libopencv_highgui.a"; sourceTree = "<absolute>"; };
 		AB1D026316DA001D00E9AA4B /* libopencv_nonfree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libopencv_nonfree.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1DF97816D9ED4000E9AA4B /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
 		AB1DF97B16D9ED4000E9AA4B /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
@@ -1743,6 +1743,7 @@
 				ABA029D81573DA1D00BC966A /* Frameworks */,
 				ABC81F8C135E730D00F4D611 /* Products */,
 				AB1D026316DA001D00E9AA4B /* libopencv_nonfree.a */,
+				A584F05E1BB1AD9B00DC6526 /* libopencv_highgui.a */,
 			);
 			name = "OpenCV-iOS";
 			sourceTree = "<group>";
@@ -3263,7 +3264,7 @@
 			);
 			name = opencv_highgui;
 			productName = opencv_features2d;
-			productReference = AB1D025F16D9FE6B00E9AA4B /* libopencv_highgui.a */;
+			productReference = A584F05E1BB1AD9B00DC6526 /* libopencv_highgui.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		ABC81FEC135E743800F4D611 /* zlib */ = {
@@ -3543,6 +3544,8 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "OpenCV-iOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;

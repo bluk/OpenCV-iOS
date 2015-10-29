@@ -4399,6 +4399,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -4419,6 +4420,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -4614,14 +4616,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/core/include",
 					"../opencv-svn/modules/core",
 					"\"$(SRCROOT)/../generatedHeaders",
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = opencv_core;
 				SDKROOT = iphoneos;
 			};
@@ -4632,17 +4632,14 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/core/include",
 					"../opencv-svn/modules/core",
 					"\"$(SRCROOT)/../generatedHeaders",
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = opencv_core;
 				SDKROOT = iphoneos;
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -4651,13 +4648,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/core/include",
 					"../opencv-svn/modules/imgproc/include",
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = opencv_imgproc;
 				SDKROOT = iphoneos;
 			};
@@ -4668,16 +4663,13 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/core/include",
 					"../opencv-svn/modules/imgproc/include",
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = opencv_imgproc;
 				SDKROOT = iphoneos;
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};

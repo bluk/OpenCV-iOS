@@ -1179,7 +1179,6 @@
 				ABC81F8E135E731700F4D611 /* Source */,
 				ABA029D81573DA1D00BC966A /* Frameworks */,
 				ABC81F8C135E730D00F4D611 /* Products */,
-				A2289E7D1C42A8A90050320B /* libopencv_highgui.a */,
 			);
 			name = "OpenCV-iOS";
 			sourceTree = "<group>";
@@ -2020,6 +2019,7 @@
 				ABC820F0135E754400F4D611 /* liblibpng.a */,
 				ABC82068135E74F000F4D611 /* liblibjpeg.a */,
 				ABC81FED135E743800F4D611 /* libzlib.a */,
+				A2289E7D1C42A8A90050320B /* libopencv_highgui.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";

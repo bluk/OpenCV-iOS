@@ -101,6 +101,8 @@
 #  include "opencv2/core.hpp"
 #endif
 
+#include "opencv2/core/fast_math.hpp"
+
 /** @addtogroup core_c
     @{
 */

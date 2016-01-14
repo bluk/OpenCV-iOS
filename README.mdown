@@ -1,25 +1,50 @@
 OpenCV-iOS
 =======
 
-OpenCV-iOS makes it easy to build OpenCV for iOS.  It contains a submodule that will
-pull a recent copy of the OpenCV source code.  It also contains an Xcode project
+OpenCV-iOS makes it easy to build OpenCV for iOS. It also contains an Xcode project
 that builds OpenCV static libraries that you can add to your project.
 
-How to checkout the project
+
+OpenCV iOS environment Forming progress
 =======
 
-In order to also checkout the OpenCV source code which is included as a git submodule, 
-clone the project using the `--recursive` option:
+1. Install Homebrew
+   Website:  http://brew.sh/index_zh-cn.html
+   Install script:  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+   Paste that at a Terminal prompt.
 
-    git clone --recursive https://github.com/jonmarimba/OpenCV-iOS.git
 
-If you've already cloned the project, run the following commands from within the 
-OpenCV-iOS directory:
+2. Install cmake 
+   To install cmake, we can check it by search command:
+   sudo brew search cmake 
 
-    git submodule init
-    git submodule update
+   If the feedback says that no cmake installed, we can using the following command:
+   sudo brew install cmake
 
-Adding OpenCV libraries to your project
+
+3. OpenCV: Install and test
+    Get source code from OpenCV hosting website, command:
+    git clone https://github.com/Itseez/opencv.git
+
+    From source code to build OpenCV, using CMake, by the following commands:
+    =========================================================
+
+    cd ~/<my_working_directory>
+    python opencv/platforms/ios/build_framework.py ios
+
+    If every things fine, after 40 minutes, you can obtain the target ~/<my_working_directory>/ios/opencv2.framework.
+    Now you can using the framework in your Xcode project.
+
+4. Form Xcode build environment
+    Create a new folder named "OpenCViOS", then copy
+    ~/<my_working_directory>/install
+    and 
+    ~/<my_working_directory>/modules
+    folders to "OpenCViOS" folder, 
+
+    Then create new project with Xcode. 
+
+    ...
 ==============================
 (details pending)
 

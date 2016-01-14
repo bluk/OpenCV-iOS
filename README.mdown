@@ -11,7 +11,7 @@ OpenCV iOS environment Forming progress
 1. Install Homebrew
    =======
    Website: 
-   
+
        http://brew.sh/index_zh-cn.html
 
    Install script: 
@@ -44,18 +44,21 @@ OpenCV iOS environment Forming progress
 
         python opencv/platforms/ios/build_framework.py ios
 
-    If every things fine, after 40 minutes, you can obtain the target ~/<my_working_directory>/ios/opencv2.framework.
+    If every things fine, after 40 minutes, you can obtain the target 
+
+        ~/<my_working_directory>/ios/opencv2.framework
+
     Now you can using the framework in your Xcode project.
 
 4. Form Xcode build environment
    =======
     Create a new folder named "OpenCViOS", then copy
 
-    ~/<my_working_directory>/install
+        ~/<my_working_directory>/install
 
     and 
 
-    ~/<my_working_directory>/modules
+        ~/<my_working_directory>/modules
 
     folders to "OpenCViOS" folder, 
 

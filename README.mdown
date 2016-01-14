@@ -11,12 +11,12 @@ OpenCV iOS environment Forming progress
 1. Install Homebrew
    =======
    Website: 
-
-    http://brew.sh/index_zh-cn.html
+   
+       http://brew.sh/index_zh-cn.html
 
    Install script: 
 
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+       ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
    Paste that at a Terminal prompt.
 
@@ -25,24 +25,24 @@ OpenCV iOS environment Forming progress
    =======
    To install cmake, we can check it by search command:
 
-   sudo brew search cmake 
+       sudo brew search cmake 
 
    If the feedback says that no cmake installed, we can using the following command:
 
-   sudo brew install cmake
+       sudo brew install cmake
 
 
 3. OpenCV: Install and test
    =======
     Get source code from OpenCV hosting website, command:
 
-    git clone https://github.com/Itseez/opencv.git
+        git clone https://github.com/Itseez/opencv.git
 
     From source code to build OpenCV, using CMake, by the following commands:
 
-    cd ~/<my_working_directory>
+        cd ~/<my_working_directory>
 
-    python opencv/platforms/ios/build_framework.py ios
+        python opencv/platforms/ios/build_framework.py ios
 
     If every things fine, after 40 minutes, you can obtain the target ~/<my_working_directory>/ios/opencv2.framework.
     Now you can using the framework in your Xcode project.

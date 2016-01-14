@@ -9,12 +9,20 @@ OpenCV iOS environment Forming progress
 =======
 
 1. Install Homebrew
-   Website:  http://brew.sh/index_zh-cn.html
-   Install script:  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+   =======
+   Website: 
+
+    http://brew.sh/index_zh-cn.html
+
+   Install script: 
+
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
    Paste that at a Terminal prompt.
 
 
 2. Install cmake 
+   =======
    To install cmake, we can check it by search command:
    sudo brew search cmake 
 
@@ -23,11 +31,12 @@ OpenCV iOS environment Forming progress
 
 
 3. OpenCV: Install and test
+   =======
     Get source code from OpenCV hosting website, command:
+
     git clone https://github.com/Itseez/opencv.git
 
     From source code to build OpenCV, using CMake, by the following commands:
-    =========================================================
 
     cd ~/<my_working_directory>
     python opencv/platforms/ios/build_framework.py ios
@@ -36,6 +45,7 @@ OpenCV iOS environment Forming progress
     Now you can using the framework in your Xcode project.
 
 4. Form Xcode build environment
+   =======
     Create a new folder named "OpenCViOS", then copy
     ~/<my_working_directory>/install
     and 
@@ -45,8 +55,7 @@ OpenCV iOS environment Forming progress
     Then create new project with Xcode. 
 
     ...
-==============================
-(details pending)
+    (details pending)
 
 Take a look at the SURF project in the examples directory, paying special attention
 to the Header Search Path build settings in the target of the Xcode project for

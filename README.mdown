@@ -24,9 +24,11 @@ OpenCV iOS environment Forming progress
 2. Install cmake 
    =======
    To install cmake, we can check it by search command:
+
    sudo brew search cmake 
 
    If the feedback says that no cmake installed, we can using the following command:
+
    sudo brew install cmake
 
 
@@ -39,6 +41,7 @@ OpenCV iOS environment Forming progress
     From source code to build OpenCV, using CMake, by the following commands:
 
     cd ~/<my_working_directory>
+
     python opencv/platforms/ios/build_framework.py ios
 
     If every things fine, after 40 minutes, you can obtain the target ~/<my_working_directory>/ios/opencv2.framework.
@@ -47,14 +50,19 @@ OpenCV iOS environment Forming progress
 4. Form Xcode build environment
    =======
     Create a new folder named "OpenCViOS", then copy
+
     ~/<my_working_directory>/install
+
     and 
+
     ~/<my_working_directory>/modules
+
     folders to "OpenCViOS" folder, 
 
-    Then create new project with Xcode. 
+    Then create new project with Xcode in "OpenCViOS" folder. 
 
     ...
+
     (details pending)
 
 Take a look at the SURF project in the examples directory, paying special attention

@@ -950,7 +950,7 @@
 		A298FED41C462C3D0058E762 /* thresh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = thresh.cpp; sourceTree = "<group>"; };
 		A298FED51C462C3D0058E762 /* undistort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = undistort.cpp; sourceTree = "<group>"; };
 		A298FED61C462C3D0058E762 /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
-		A298FF431C465E210058E762 /* libpng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpng.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A298FF431C465E210058E762 /* liblibpng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibpng.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A298FF4C1C465E870058E762 /* png.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = png.c; path = "../../opencv-svn/3rdparty/libpng/png.c"; sourceTree = "<group>"; };
 		A298FF4D1C465E870058E762 /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = png.h; path = "../../opencv-svn/3rdparty/libpng/png.h"; sourceTree = "<group>"; };
 		A298FF4E1C465E870058E762 /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pngconf.h; path = "../../opencv-svn/3rdparty/libpng/pngconf.h"; sourceTree = "<group>"; };
@@ -973,7 +973,7 @@
 		A298FF5F1C465E870058E762 /* pngwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngwrite.c; path = "../../opencv-svn/3rdparty/libpng/pngwrite.c"; sourceTree = "<group>"; };
 		A298FF601C465E870058E762 /* pngwtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngwtran.c; path = "../../opencv-svn/3rdparty/libpng/pngwtran.c"; sourceTree = "<group>"; };
 		A298FF611C465E870058E762 /* pngwutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngwutil.c; path = "../../opencv-svn/3rdparty/libpng/pngwutil.c"; sourceTree = "<group>"; };
-		A298FF751C46603E0058E762 /* libjpeg.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjpeg.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A298FF751C46603E0058E762 /* liblibjpeg.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibjpeg.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A298FF801C4660750058E762 /* jaricom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = jaricom.c; path = "../../opencv-svn/3rdparty/libjpeg/jaricom.c"; sourceTree = "<group>"; };
 		A298FF811C4660750058E762 /* jcapimin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = jcapimin.c; path = "../../opencv-svn/3rdparty/libjpeg/jcapimin.c"; sourceTree = "<group>"; };
 		A298FF821C4660750058E762 /* jcapistd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = jcapistd.c; path = "../../opencv-svn/3rdparty/libjpeg/jcapistd.c"; sourceTree = "<group>"; };
@@ -1139,8 +1139,8 @@
 		0867D691FE84028FC02AAC07 /* OpenCV-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A298FF441C465E220058E762 /* png */,
-				A298FF761C46603E0058E762 /* jpeg */,
+				A298FF441C465E220058E762 /* libpng */,
+				A298FF761C46603E0058E762 /* libjpeg */,
 				A298FCD51C46243F0058E762 /* zlib */,
 				A298FD341C46280D0058E762 /* opencv_core */,
 				A298FE6C1C462BD80058E762 /* opencv_imgproc */,
@@ -1878,7 +1878,7 @@
 			path = "../../opencv-svn/modules/imgproc/src";
 			sourceTree = "<group>";
 		};
-		A298FF441C465E220058E762 /* png */ = {
+		A298FF441C465E220058E762 /* libpng */ = {
 			isa = PBXGroup;
 			children = (
 				A298FF4C1C465E870058E762 /* png.c */,
@@ -1904,10 +1904,11 @@
 				A298FF601C465E870058E762 /* pngwtran.c */,
 				A298FF611C465E870058E762 /* pngwutil.c */,
 			);
+			name = libpng;
 			path = png;
 			sourceTree = "<group>";
 		};
-		A298FF761C46603E0058E762 /* jpeg */ = {
+		A298FF761C46603E0058E762 /* libjpeg */ = {
 			isa = PBXGroup;
 			children = (
 				A298FF801C4660750058E762 /* jaricom.c */,
@@ -1967,6 +1968,7 @@
 				A298FFB61C4660750058E762 /* jutils.c */,
 				A298FFB71C4660750058E762 /* jversion.h */,
 			);
+			name = libjpeg;
 			path = jpeg;
 			sourceTree = "<group>";
 		};
@@ -2038,8 +2040,8 @@
 		ABC81F8C135E730D00F4D611 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A298FF431C465E210058E762 /* libpng.a */,
-				A298FF751C46603E0058E762 /* libjpeg.a */,
+				A298FF431C465E210058E762 /* liblibpng.a */,
+				A298FF751C46603E0058E762 /* liblibjpeg.a */,
 				A298FCD41C46243F0058E762 /* libzlib.a */,
 				A298FD331C46280C0058E762 /* libopencv_core.a */,
 				A298FE6B1C462BD70058E762 /* libopencv_imgproc.a */,
@@ -2239,9 +2241,9 @@
 			productReference = A298FE6B1C462BD70058E762 /* libopencv_imgproc.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A298FF421C465E210058E762 /* png */ = {
+		A298FF421C465E210058E762 /* libpng */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A298FF491C465E220058E762 /* Build configuration list for PBXNativeTarget "png" */;
+			buildConfigurationList = A298FF491C465E220058E762 /* Build configuration list for PBXNativeTarget "libpng" */;
 			buildPhases = (
 				A298FF3F1C465E210058E762 /* Sources */,
 				A298FF401C465E210058E762 /* Frameworks */,
@@ -2251,14 +2253,14 @@
 			);
 			dependencies = (
 			);
-			name = png;
+			name = libpng;
 			productName = png;
-			productReference = A298FF431C465E210058E762 /* libpng.a */;
+			productReference = A298FF431C465E210058E762 /* liblibpng.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A298FF741C46603E0058E762 /* jpeg */ = {
+		A298FF741C46603E0058E762 /* libjpeg */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A298FF7B1C46603E0058E762 /* Build configuration list for PBXNativeTarget "jpeg" */;
+			buildConfigurationList = A298FF7B1C46603E0058E762 /* Build configuration list for PBXNativeTarget "libjpeg" */;
 			buildPhases = (
 				A298FF711C46603E0058E762 /* Sources */,
 				A298FF721C46603E0058E762 /* Frameworks */,
@@ -2268,9 +2270,9 @@
 			);
 			dependencies = (
 			);
-			name = jpeg;
+			name = libjpeg;
 			productName = jpeg;
-			productReference = A298FF751C46603E0058E762 /* libjpeg.a */;
+			productReference = A298FF751C46603E0058E762 /* liblibjpeg.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A298FFEB1C4662A60058E762 /* opencv_video */ = {
@@ -2356,8 +2358,8 @@
 			projectRoot = "";
 			targets = (
 				ABC8289A135E898900F4D611 /* ALL_BUILD */,
-				A298FF421C465E210058E762 /* png */,
-				A298FF741C46603E0058E762 /* jpeg */,
+				A298FF421C465E210058E762 /* libpng */,
+				A298FF741C46603E0058E762 /* libjpeg */,
 				A298FCD31C46243F0058E762 /* zlib */,
 				A298FD321C46280C0058E762 /* opencv_core */,
 				A298FE6A1C462BD70058E762 /* opencv_imgproc */,
@@ -2776,12 +2778,12 @@
 		};
 		A29802DB1C466E8F0058E762 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A298FF421C465E210058E762 /* png */;
+			target = A298FF421C465E210058E762 /* libpng */;
 			targetProxy = A29802DA1C466E8F0058E762 /* PBXContainerItemProxy */;
 		};
 		A29802DD1C466E8F0058E762 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A298FF741C46603E0058E762 /* jpeg */;
+			target = A298FF741C46603E0058E762 /* libjpeg */;
 			targetProxy = A29802DC1C466E8F0058E762 /* PBXContainerItemProxy */;
 		};
 		A29802DF1C466E8F0058E762 /* PBXTargetDependency */ = {
@@ -4121,6 +4123,7 @@
 				A298002B1C4663FE0058E762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A29800661C4665B90058E762 /* Build configuration list for PBXNativeTarget "opencv_features2d" */ = {
 			isa = XCConfigurationList;
@@ -4129,6 +4132,7 @@
 				A29800681C4665B90058E762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A29800BE1C4666FB0058E762 /* Build configuration list for PBXNativeTarget "opencv_calib3d" */ = {
 			isa = XCConfigurationList;
@@ -4137,6 +4141,7 @@
 				A29800C01C4666FB0058E762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A29801181C4669400058E762 /* Build configuration list for PBXNativeTarget "opencv_ts" */ = {
 			isa = XCConfigurationList;
@@ -4145,6 +4150,7 @@
 				A298011A1C4669400058E762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A298014C1C466AC50058E762 /* Build configuration list for PBXNativeTarget "opencv_ml" */ = {
 			isa = XCConfigurationList;
@@ -4153,6 +4159,7 @@
 				A298014E1C466AC50058E762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A298017F1C466BF20058E762 /* Build configuration list for PBXNativeTarget "opencv_objdetect" */ = {
 			isa = XCConfigurationList;
@@ -4161,6 +4168,7 @@
 				A29801811C466BF20058E762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A29801AB1C466D7C0058E762 /* Build configuration list for PBXNativeTarget "opencv_highgui" */ = {
 			isa = XCConfigurationList;
@@ -4169,6 +4177,7 @@
 				A29801AD1C466D7C0058E762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A298FCDA1C46243F0058E762 /* Build configuration list for PBXNativeTarget "zlib" */ = {
 			isa = XCConfigurationList;
@@ -4197,7 +4206,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A298FF491C465E220058E762 /* Build configuration list for PBXNativeTarget "png" */ = {
+		A298FF491C465E220058E762 /* Build configuration list for PBXNativeTarget "libpng" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A298FF4A1C465E220058E762 /* Debug */,
@@ -4206,7 +4215,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A298FF7B1C46603E0058E762 /* Build configuration list for PBXNativeTarget "jpeg" */ = {
+		A298FF7B1C46603E0058E762 /* Build configuration list for PBXNativeTarget "libjpeg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A298FF7C1C46603E0058E762 /* Debug */,
@@ -4222,6 +4231,7 @@
 				A298FFF41C4662A70058E762 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABC828C1135E89C600F4D611 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;

@@ -1,8 +1,0 @@
-
-OpenCV source code place here.
-
-OpenCV host in github: 
-https://github.com/Itseez/opencv
-
-
-
